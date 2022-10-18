@@ -10,7 +10,7 @@ var mysql = require('mysql');
  
 
 var con = mysql.createConnection({
-  host: "",
+  host: "mysqltest.claoe0d14zoe.us-east-1.rds.amazonaws.com",
   user: "mysqltest", 
   password: "mysqltest", 
   database: "mysqltest"
