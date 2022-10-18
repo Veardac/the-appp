@@ -34,7 +34,7 @@ app.post('/',(req,res)=>{
 	var records = [[req.body.name,req.body.rollno]];
 	if(records[0][0]!=null)
 	{
-		con.query("INSERT into student (name,rollno) VALUES ?",[records],function(err,res,fields){
+		con.query("INSERT into student (name,address,mobile,email) VALUES ?",[records],function(err,res,fields){
 
 			if(err) throw err;
 
